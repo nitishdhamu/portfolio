@@ -165,12 +165,15 @@ hr {
 
 .projectbox {
     width: 450px;
-    height: 650px;
+    height: 700px;
     color: white;
     background-color: #0f3460;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .projectbox h2 {
@@ -185,6 +188,23 @@ hr {
     height: 600px;
     border: none;
     border-radius: 0 0 10px 10px;
+}
+
+.view-btn {
+    background-color: #a3cef1;
+    color: #0f3460;
+    padding: 10px 20px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.view-btn:hover {
+    background-color: #88bde6;
 }
 
 .project-line {
