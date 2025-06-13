@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitish Dhamu - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Nitish's Portfolio</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="leftSection1">
+                Hi, my name is <span id="highlight">Nitish</span><br>
+                I am a passionate <br>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection1">
+                <img src="assets/images/profile.jpg" alt="profile image">
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- About Section -->
+        <section class="secondSection" id="about">
+            <div class="textContent">
+                <div class="about">
+                    <h2>About Me</h2>
+                    <p>Hi, I'm Nitish Dhamu. A Web Developer and Web Designer passionate about building responsive,
+                        user-friendly, and visually engaging websites. I'm constantly learning and expanding my skills
+                        to stay current with the latest technologies and trends.</p>
+                </div>
+
+                <div class="education">
+                    <h2>Education</h2>
+                    <p>I am currently pursuing a <strong>Bachelor of Computer Applications (BCA)</strong> from
+                        <strong>Amity University Haryana</strong>.</p>
+                </div>
+
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Web Design</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="imageContent">
+                <img src="assets/images/Developer illustration.webp" alt="coder image">
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Services Section -->
+        <section class="servicesSection" id="services">
+            <h1>My Services</h1>
+            <div class="services">
+                <div class="serviceBox">Web Development</div>
+                <div class="serviceBox">Web Design</div>
+                <div class="serviceBox">UI/UX Improvement</div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Projects Section -->
+        <section class="thirdSection" id="projects">
+            <h1>My Projects</h1>
+            <div class="projects">
+                <div class="projectbox">
+                    <h2>To-Do List</h2>
+                    <iframe src="todo.html"></iframe>
+                </div>
+                <div class="projectbox">
+                    <h2>Calculator</h2>
+                    <iframe src="calculator.html"></iframe>
+                </div>
+                <div class="projectbox">
+                    <h2>Digital Clock</h2>
+                    <iframe src="clock.html"></iframe>
+                </div>
+            </div>
+            <div class="project-line"></div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p>Phone: +91 9467818508</p>
+            <p>Email: <a href="mailto:nitishdhamu@gmail.com">nitishdhamu@gmail.com</a></p>
+            <p>Follow me on <a href="https://www.linkedin.com/in/nitishdhamu" target="_blank">LinkedIn</a></p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        window.onload = function () {
+            document.getElementById('highlight').style.color = '#0f3460';
+
+            var typed = new Typed('#element', {
+                strings: ['Web Developer.', 'Web Designer.', 'UI/UX Designer.'],
+                typeSpeed: 50,
+                backSpeed: 30,
+                backDelay: 2000,
+                loop: true,
+            });
+        }
+    </script>
+</body>
+
+</html>
