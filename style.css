@@ -160,11 +160,11 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 .projectbox {
-    width: 450px;
+    width: 485px;
     height: 700px;
     color: white;
     background-color: #0f3460;
